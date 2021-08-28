@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!-- <h1>PERSONAJES</h1> -->
+    <Personajes />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+/* 1. Importar componente (tal cual como fue exportado) */
+import Personajes from "./components/Personajes.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { Personajes },
+  data: () => ({}),
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  background-image: url(./assets/cropped-RM_page-header_background1-3.png);
+  background-size: cover;
+
+  color: green;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 </style>
